@@ -12,7 +12,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     private var items = [
-        MainViewModel(title: "Оплата", image: UIImage(systemName: "dollarsign.square")!),
+        MainViewModel(title: "Оплата", image: UIImage(systemName: "dollarsign.square")!, destination: PayViewController(nibName: "PayViewController", bundle: nil)),
         MainViewModel(title: "Переводы", image: UIImage(systemName: "tray.and.arrow.up")!),
         MainViewModel(title: "Мои счета", image: UIImage(systemName: "list.bullet.rectangle")!),
         MainViewModel(title: "Click PASS", image: UIImage(systemName: "app.badge.checkmark")!),
@@ -94,7 +94,12 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(items[indexPath.row].title)
+        if let destination = items[indexPath.row].destination {
+            destination.modalPresentationStyle = .overFullScreen
+            self.present(destination, animated: true)
+        } else {
+            print(items[indexPath.row].title)
+        }
     }
 }
 

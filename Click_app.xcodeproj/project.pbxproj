@@ -18,6 +18,11 @@
 		C883A50429AF16BB00E1D8A5 /* CustomCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C883A50229AF16BB00E1D8A5 /* CustomCollectionCell.xib */; };
 		C883A50729AF191400E1D8A5 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C883A50629AF191400E1D8A5 /* MainViewModel.swift */; };
 		C883A50929AF26F900E1D8A5 /* UICollectionViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C883A50829AF26F900E1D8A5 /* UICollectionViewCellExtension.swift */; };
+		C883A50C29AF373B00E1D8A5 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C883A50A29AF373B00E1D8A5 /* PayViewController.swift */; };
+		C883A50D29AF373B00E1D8A5 /* PayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C883A50B29AF373B00E1D8A5 /* PayViewController.xib */; };
+		C883A51129AF5B9C00E1D8A5 /* PayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C883A51029AF5B9C00E1D8A5 /* PayViewModel.swift */; };
+		C883A51429AF5D7400E1D8A5 /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C883A51229AF5D7400E1D8A5 /* CustomTableCell.swift */; };
+		C883A51529AF5D7500E1D8A5 /* CustomTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C883A51329AF5D7400E1D8A5 /* CustomTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		C883A50229AF16BB00E1D8A5 /* CustomCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionCell.xib; sourceTree = "<group>"; };
 		C883A50629AF191400E1D8A5 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		C883A50829AF26F900E1D8A5 /* UICollectionViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCellExtension.swift; sourceTree = "<group>"; };
+		C883A50A29AF373B00E1D8A5 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		C883A50B29AF373B00E1D8A5 /* PayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayViewController.xib; sourceTree = "<group>"; };
+		C883A51029AF5B9C00E1D8A5 /* PayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewModel.swift; sourceTree = "<group>"; };
+		C883A51229AF5D7400E1D8A5 /* CustomTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
+		C883A51329AF5D7400E1D8A5 /* CustomTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,8 @@
 				C883A4FA29AF14FE00E1D8A5 /* UI */,
 				C883A4E529AF0DE000E1D8A5 /* MainViewController.swift */,
 				C883A4E729AF0DE000E1D8A5 /* Main.storyboard */,
+				C883A50A29AF373B00E1D8A5 /* PayViewController.swift */,
+				C883A50B29AF373B00E1D8A5 /* PayViewController.xib */,
 				C883A4EF29AF0DE200E1D8A5 /* Info.plist */,
 			);
 			path = Click_app;
@@ -110,6 +122,8 @@
 			children = (
 				C883A50129AF16BB00E1D8A5 /* CustomCollectionCell.swift */,
 				C883A50229AF16BB00E1D8A5 /* CustomCollectionCell.xib */,
+				C883A51229AF5D7400E1D8A5 /* CustomTableCell.swift */,
+				C883A51329AF5D7400E1D8A5 /* CustomTableCell.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -118,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				C883A50629AF191400E1D8A5 /* MainViewModel.swift */,
+				C883A51029AF5B9C00E1D8A5 /* PayViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -183,7 +198,9 @@
 				C883A50429AF16BB00E1D8A5 /* CustomCollectionCell.xib in Resources */,
 				C883A4EE29AF0DE200E1D8A5 /* LaunchScreen.storyboard in Resources */,
 				C883A4EB29AF0DE200E1D8A5 /* Assets.xcassets in Resources */,
+				C883A51529AF5D7500E1D8A5 /* CustomTableCell.xib in Resources */,
 				C883A4E929AF0DE000E1D8A5 /* Main.storyboard in Resources */,
+				C883A50D29AF373B00E1D8A5 /* PayViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,8 +212,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C883A4E629AF0DE000E1D8A5 /* MainViewController.swift in Sources */,
+				C883A51429AF5D7400E1D8A5 /* CustomTableCell.swift in Sources */,
+				C883A51129AF5B9C00E1D8A5 /* PayViewModel.swift in Sources */,
 				C883A50329AF16BB00E1D8A5 /* CustomCollectionCell.swift in Sources */,
 				C883A50929AF26F900E1D8A5 /* UICollectionViewCellExtension.swift in Sources */,
+				C883A50C29AF373B00E1D8A5 /* PayViewController.swift in Sources */,
 				C883A4E229AF0DE000E1D8A5 /* AppDelegate.swift in Sources */,
 				C883A4E429AF0DE000E1D8A5 /* SceneDelegate.swift in Sources */,
 				C883A4F729AF0DF400E1D8A5 /* UIColorExtension.swift in Sources */,

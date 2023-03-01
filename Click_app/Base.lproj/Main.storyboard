@@ -114,13 +114,14 @@
                             <constraint firstItem="hN5-6h-OKX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="wUY-PO-yrG"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="iht-SP-aJt"/>
                     <connections>
                         <outlet property="collectionView" destination="koR-MW-MIl" id="acg-cs-f5S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-86.25954198473282" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="840.45801526717548" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
