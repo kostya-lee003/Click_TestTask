@@ -61,6 +61,7 @@ class MainViewController: UIViewController {
     }
 }
 
+// MARK: Collection View
 extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func numberOfSections(in collectionView: UICollectionView) -> Int { 1 }
     
@@ -97,16 +98,17 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
 }
 
+// MARK: Scroll View animation
 extension MainViewController: UIScrollViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print(scrollView.contentOffset)
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        UIView.animate(withDuration: 0.2) { [weak self] in
+            self?.collectionView.transform = CGAffineTransform(translationX: 0, y: -25.0)
+        }
     }
-    
-//    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-//
-//    }
-//
-//    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-//
-//    }
+
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        UIView.animate(withDuration: 0.2) { [weak self] in
+            self?.collectionView.transform = .identity
+        }
+    }
 }
